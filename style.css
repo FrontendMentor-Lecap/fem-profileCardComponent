@@ -54,6 +54,12 @@ body {
 
 .card {
     background-color: white;
+<<<<<<< HEAD
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+=======
+>>>>>>> 379d9e916621a768897f83cb4573db781ff00159
     width: 20rem;
     border-radius: 1em;
     position: relative;
