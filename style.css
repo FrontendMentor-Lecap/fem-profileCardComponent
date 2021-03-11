@@ -1,0 +1,140 @@
+:root {
+    --dark-cyan:hsl(185, 75%, 39%);
+    --vdrk-blue:hsl(229, 23%, 23%);
+    --dk-blue:hsl(227, 10%, 46%);
+    --dk-gray:hsl(0,0%,59%);
+}
+
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 18px;
+        font: inherit;
+        vertical-align: baseline;
+        overflow: hidden;
+}
+
+body {
+    background-color:var(--dark-cyan);
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    color: var(--vdrk-blue);
+    position: relative;
+}
+
+.bg-pattern-top,
+.bg-pattern-bottom {
+    position: absolute;
+}
+
+.bg-pattern-top {
+    right: 45%;
+    bottom: 55%;
+}
+
+.bg-pattern-bottom {
+    top: 25%;
+    left: 35%;
+}
+
+
+.card {
+    background-color: white;
+    background-image: url(/images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20rem;
+    height: auto;
+    border-radius: 1em;
+    position: relative;
+    z-index: 2;
+    margin: 30% auto;
+}
+
+.card__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25%;
+}
+
+.card__top img {
+    border-radius: 50%;
+    border: 4px white solid;
+    max-width: 50%;
+}
+
+.card__top h1 {
+    padding: 5%;
+    font-weight: 700;
+}
+
+.card__top span {
+    font-weight: 400;
+    color: var(--dk-blue);
+}
+.card__top h2 {
+    font-weight: 400;
+    color: var(--dk-gray);
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+
+.card__bottom {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 0;
+}
+
+.card__bottom .numbers {
+    font-weight: 700;
+}
+
+.card__bottom p {
+    color: var(--dk-gray);
+    font-size: 0.7em;
+    padding: 10%;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+} 
+
+@media (min-width:900px) {
+    .card {
+        width: 30rem;
+        margin: 15% auto;
+    }
+
+    .bg-pattern-top {
+    right: 50%;
+    bottom: 50%;
+}
+
+.bg-pattern-bottom {
+    top: 55%;
+    left: 55%;
+}
+
+}
+
+
+
+
