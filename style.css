@@ -1,141 +1,194 @@
 :root {
-    --dark-cyan:hsl(185, 75%, 39%);
-    --vdrk-blue:hsl(229, 23%, 23%);
-    --dk-blue:hsl(227, 10%, 46%);
-    --dk-gray:hsl(0,0%,59%);
+  --dark-cyan: hsl(185, 75%, 39%);
+  --vdrk-blue: hsl(229, 23%, 23%);
+  --dk-blue: hsl(227, 10%, 46%);
+  --dk-gray: hsl(0, 0%, 59%);
 }
 
-    html, body, div, span, applet, object, iframe,
-    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-    a, abbr, acronym, address, big, cite, code,
-    del, dfn, em, img, ins, kbd, q, s, samp,
-    small, strike, strong, sub, sup, tt, var,
-    b, u, i, center,
-    dl, dt, dd, ol, ul, li,
-    fieldset, form, label, legend,
-    table, caption, tbody, tfoot, thead, tr, th, td,
-    article, aside, canvas, details, embed, 
-    figure, figcaption, footer, header, hgroup, 
-    menu, nav, output, ruby, section, summary,
-    time, mark, audio, video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 body {
-    background-color:var(--dark-cyan);
-    min-height: 100vh;
-    font-family: 'Kumbh Sans', sans-serif;
-    color: var(--vdrk-blue);
-    display: grid;
-    place-items: center;
-    font-size: 18px;
-    overflow: hidden;
+  background-color: var(--dark-cyan);
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: var(--vdrk-blue);
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  overflow: hidden;
+  background-image: url('./images/bg-pattern-top.svg'),
+    url('./images/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: bottom 40vh right 48vw, top 50vh left 48vw;
+  background-position-x: right 48vw, left 48vw;
+  background-position-y: bottom 40vh, top 50vh;
 }
-
-.bg-pattern-top,
-.bg-pattern-bottom {
-    position: absolute;
-}
-
-.bg-pattern-top {
-    right: 45%;
-    bottom: 55%;
-}
-
-.bg-pattern-bottom {
-    top: 35%;
-    left: 35%;
-}
-
 
 .card {
-    background-color: white;
-    width: 20rem;
-    border-radius: 1em;
-    position: relative;
-    z-index: 2;
-    overflow: hidden;
+  background-color: white;
+  width: 20rem;
+  border-radius: 1em;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
 }
 
 .card__header {
-    background-image: url("images/bg-pattern-card.svg");
-    height: 8.75rem;
+  background-image: url('images/bg-pattern-card.svg');
+  height: 8.75rem;
 }
 
 .card__top {
-    display: flex;
-    height: 9.375rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: visible;
+  display: flex;
+  height: 9.375rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
 }
 
 .card__top img {
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 3px white solid;
-    background-color: white;
-    max-width: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px white solid;
+  background-color: white;
+  max-width: 50%;
 }
 
 .card__top h1 {
-    margin: 15% 0 3%;
-    font-weight: 700;
+  margin: 15% 0 3%;
+  font-weight: 700;
 }
 
 .card__top span {
-    font-weight: 400;
-    color: var(--dk-blue);
+  font-weight: 400;
+  color: var(--dk-blue);
 }
 .card__top h2 {
-    font-weight: 400;
-    color: var(--dk-gray);
-    margin: 0;
-    margin-bottom: 5%;
+  font-weight: 400;
+  color: var(--dk-gray);
+  margin: 0;
+  margin-bottom: 5%;
 }
 
-
 .card__bottom {
-    height: 5rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-top: 1px solid var(--dk-gray);
+  height: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid var(--dk-gray);
 }
 
 .card__bottom .numbers {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .card__bottom p {
-    color: var(--dk-gray);
-    font-size: 0.7em;
+  color: var(--dk-gray);
+  font-size: 0.7em;
 }
 .socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    line-height: 1.5;
-} 
-
-.attribution {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.5;
 }
 
-
-
-
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
